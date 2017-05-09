@@ -1,0 +1,50 @@
+/*
+    Document   : tryCssFile
+    Created on : Feb 11, 2013, 9:35:10 PM
+    Author     : eugenesumaryev
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@CHARSET "UTF-8";
+
+
+
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #e2edff;
+  line-height: 125%;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: navy;
+  font-size: 130%;
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+h3{font-size: x-large;
+  background-color: navy;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: .2em;
+  padding-left: .4em;
+  margin: 0;
+  background: navy;
+  position: relative;
+}
+p {
+  font-size: small;
+  color: navy;
+}
+
+/*root {
+    display: block;
+}
+*/
