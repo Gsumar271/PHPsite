@@ -18,7 +18,7 @@
 
     </head>
     <body>
-      <?php
+  <?php
         include 'rnfunctions.php';
         session_start();
 
@@ -31,34 +31,33 @@
 
 // echo "<html><head><title>$appname";
 
-        if($loggedin) echo "($user)";
+if($loggedin) echo "($user)";
 // echo "</title></head><body><font face='verdana' size = '2'>";
 // echo "<h2>$appname</h2>";
-
-        echo "
-        <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">
-          <div class=\"container\">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class=\"navbar-header\">
-            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">
-              <span class=\"sr-only\">Toggle navigation</span>
-              <span class=\"icon-bar\"></span>
-              <span class=\"icon-bar\"></span>
-              <span class=\"icon-bar\"></span>
-            </button>
-          <a class=\"navbar-brand\" href=\"#\">
-            <img src=\"http://placehold.it/150x50&text=Logo\" alt=\"\">
-            </a>
-          </div>
-        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">
-        <ul class=\"nav navbar-nav\">
-
-         ";
+echo <<<_END
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="http://placehold.it/150x50&text=Logo" alt="">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+_END;
 
         if($loggedin)
           {
-            echo "<b>$user</b>:
-                    <li>
+            echo "  <li>
                       <a href='rnmembers.php?view=$user'>Home</a>
                     </li>
                     <li>
@@ -76,6 +75,7 @@
                     <li>
                         <a href='rnlogout.php'>Log out</a>
                     </li>
+                <b id = \"introName\">$user</b>:
 
             ";
           }
@@ -109,8 +109,8 @@ echo <<<_END
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>Logo Nav by Start Bootstrap</h1>
-                <p>Note: You may need to adjust some CSS based on the size of your logo. The default logo size is 150x50 pixels.</p>
+                <h1></h1>
+                <p></p>
             </div>
         </div>
     </div>
